@@ -11,7 +11,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/clima.jpg);
+    background-image: url(./img/paisagem.jpg);
+    
 }
 
 .caixa-maior{
@@ -26,6 +27,19 @@ body{
 .caixa-media{
     margin-top: 30px;
 }
+.caixa-media h5{
+    color: white;
+    margin-top: 20px;
+    display: inline-block;
+    padding-right: 70px;
+    padding-top: 10px;
+    
+
+}
+.caixa-media h4{
+    color: white;
+    margin-top: 20px;
+}
 
 .input-cidade{
     border: none;
@@ -33,11 +47,13 @@ body{
     padding: 10px;
     border-radius: 10px;
     font-size: 14px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.299);
     color: white;
     width: calc(100% - 50px);
-    
-
+}
+.input-cidade:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
 }
  .botao-buscar{
     border: none;
@@ -47,8 +63,12 @@ body{
     padding: 8px;
     border-radius: 40px;
     float: right;
-    
 
+ }
+
+ .botao-buscar:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
  }
 
  .img-buscar{
@@ -79,6 +99,7 @@ body{
  .texto-previsao{
     color: white;
     margin-left: 20px;
+    text-transform: capitalize;
  }
 
  .umidade-previsao{
